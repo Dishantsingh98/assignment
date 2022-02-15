@@ -1,6 +1,6 @@
 // Book Class: Represent a Book
 class Book {
-    constructor(name, author, publishing ,isbn){
+    constructor(name,author,publishing,isbn){
         this.name = name;
         this.author = author;
         this.publishing = publishing;
