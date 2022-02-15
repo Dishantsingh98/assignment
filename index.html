@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/55213cc571.js" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+    <title>BookList</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="display-5 text-center">BookList</h1>
+        <form id="Book form">
+            <div class="from-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" 
+                class="form-control">
+            </div>
+            <div class="from-group">
+                <label for="author">Author</label>
+                <input type="text" id="author" 
+                class="form-control">
+            </div>
+            <div class="from-group">
+                <label for="publishing">Year of publishing</label>
+                <input type="text" id="publishing" 
+                class="form-control">
+            </div>
+            <div class="from-group">
+                <label for="isbn">ISBN</label>
+                <input type="text" id="isbn" 
+                class="form-control">
+            </div>
+
+            <input type="submit" value="Add Book"
+            class="btn btn-primary btn-block mt-2">
+        </form>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Year of publishing</th>
+                    <th>ISBN</th>
+                </tr>
+                <tbody id="book-list"></tbody>
+            </thead>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
