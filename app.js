@@ -12,21 +12,7 @@ class Book {
 // UI Class: Handle UI 
 class UI {
     static displayBooks(){
-        const StoreBooks = [
-            {
-                name: 'Book 1',
-                author: 'XYZ',
-                publishing: '1999',
-                isbn: '77777',
-            },
-            {
-                name: 'Book 2',
-                author: 'abc',
-                publishing: '1991',
-                isbn: '88888',
-
-            }
-        ];
+    const books = Store.getBooks();
 
         const books = StoreBooks;
 
@@ -140,7 +126,10 @@ document.querySelector('#book-form').addEventListener('submit', (e) =>{
     // Add Book in UI
     UI.addBookToList(book);
 
-    
+
+    // Add book to store
+    Store.addBook(book);
+
 
     // clear fields
     UI.clearFields();
